@@ -15,6 +15,8 @@
 		082516CD252923E600185CDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 082516CB252923E600185CDE /* LaunchScreen.storyboard */; };
 		082516D8252923E700185CDE /* VideoDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082516D7252923E700185CDE /* VideoDemoTests.swift */; };
 		082516E3252923E700185CDE /* VideoDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082516E2252923E700185CDE /* VideoDemoUITests.swift */; };
+		0825170D252932A800185CDE /* blackpink.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 08251706252930A600185CDE /* blackpink.mp4 */; };
+		08251715252941FA00185CDE /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08251714252941FA00185CDE /* VideoPlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		082516DE252923E700185CDE /* VideoDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		082516E2252923E700185CDE /* VideoDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDemoUITests.swift; sourceTree = "<group>"; };
 		082516E4252923E700185CDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08251706252930A600185CDE /* blackpink.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = blackpink.mp4; sourceTree = "<group>"; };
+		08251714252941FA00185CDE /* VideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +106,12 @@
 				082516C0252923E500185CDE /* AppDelegate.swift */,
 				082516C2252923E500185CDE /* SceneDelegate.swift */,
 				082516C4252923E500185CDE /* ViewController.swift */,
+				08251714252941FA00185CDE /* VideoPlayer.swift */,
 				082516C6252923E500185CDE /* Main.storyboard */,
 				082516C9252923E600185CDE /* Assets.xcassets */,
 				082516CB252923E600185CDE /* LaunchScreen.storyboard */,
 				082516CE252923E600185CDE /* Info.plist */,
+				08251706252930A600185CDE /* blackpink.mp4 */,
 			);
 			path = VideoDemo;
 			sourceTree = "<group>";
@@ -234,6 +240,7 @@
 				082516CD252923E600185CDE /* LaunchScreen.storyboard in Resources */,
 				082516CA252923E600185CDE /* Assets.xcassets in Resources */,
 				082516C8252923E500185CDE /* Main.storyboard in Resources */,
+				0825170D252932A800185CDE /* blackpink.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08251715252941FA00185CDE /* VideoPlayer.swift in Sources */,
 				082516C5252923E500185CDE /* ViewController.swift in Sources */,
 				082516C1252923E500185CDE /* AppDelegate.swift in Sources */,
 				082516C3252923E500185CDE /* SceneDelegate.swift in Sources */,
