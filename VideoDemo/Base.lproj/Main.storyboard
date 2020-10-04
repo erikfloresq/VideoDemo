@@ -28,10 +28,34 @@
                                     <action selector="showVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PSG-pQ-Cz3"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="egc-2m-j2V">
+                                <rect key="frame" x="165" y="510" width="84" height="31"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="XtM-U3-Jzo">
+                                        <rect key="frame" x="0.0" y="0.0" width="84" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PiP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mjf-rh-fLU">
+                                                <rect key="frame" x="0.0" y="0.0" width="25" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="82u-lg-9La">
+                                                <rect key="frame" x="35" y="0.0" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="activePip:" destination="BYZ-38-t0r" eventType="valueChanged" id="ptO-PX-7IJ"/>
+                                                </connections>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="egc-2m-j2V" firstAttribute="top" secondItem="l8T-VM-Zf5" secondAttribute="bottom" constant="40" id="0s4-1U-LY8"/>
+                            <constraint firstItem="egc-2m-j2V" firstAttribute="centerX" secondItem="l8T-VM-Zf5" secondAttribute="centerX" id="6Kn-XB-CRg"/>
                             <constraint firstItem="l8T-VM-Zf5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U1e-uI-ldi"/>
                             <constraint firstItem="l8T-VM-Zf5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="spj-vC-QtC"/>
                         </constraints>
@@ -39,7 +63,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="108"/>
+            <point key="canvasLocation" x="18.840579710144929" y="107.8125"/>
         </scene>
     </scenes>
     <resources>

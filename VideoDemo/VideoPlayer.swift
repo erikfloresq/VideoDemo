@@ -16,7 +16,7 @@ class VideoPlayer: NSObject {
         var playerViewController = AVPlayerViewController()
         playerViewController.player = player
         playerViewController.delegate = self
-        playerViewController.allowsPictureInPicturePlayback = true
+        playerViewController.allowsPictureInPicturePlayback = false
         playerViewController.entersFullScreenWhenPlaybackBegins = true
         return playerViewController
     }()
@@ -28,13 +28,20 @@ class VideoPlayer: NSObject {
     
     @objc
     func enterBackground() {
-        self.playerViewController.player = nil
+        let pipInactive = !playerViewController.allowsPictureInPicturePlayback
+        if pipInactive {
+            self.playerViewController.player = nil
+        }
     }
     
 }
 
 extension VideoPlayer: AVPlayerViewControllerDelegate {
     func playerViewControllerDidStartPictureInPicture(_ playerViewController: AVPlayerViewController) {
-        print("playerViewControllerDidStartPictureInPicture")
+        print("START playerViewControllerDidStartPictureInPicture")
+    }
+    
+    func playerViewControllerDidStopPictureInPicture(_ playerViewController: AVPlayerViewController) {
+        print("STOP playerViewControllerDidStopPictureInPicture")
     }
 }

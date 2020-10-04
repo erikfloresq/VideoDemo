@@ -28,6 +28,18 @@ class ViewController: UIViewController {
             playerViewController.player?.play()
         }
     }
+    
+    @IBAction func activePip(_ sender: UISwitch) {
+        if sender.isOn {
+            videoPlayer.playerViewController.allowsPictureInPicturePlayback = true
+        } else {
+            videoPlayer.playerViewController.allowsPictureInPicturePlayback = false
+        }
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
 
 }
 
